@@ -1,0 +1,127 @@
+body {
+  font-family: "Lexend Deca", sans-serif;
+  background-color: hsl(0, 0%, 95%);
+  font-size: 15px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 15px);
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 800px;
+  height: 400px;
+  border: none;
+  border-radius: 10px;
+  color: hsl(0, 0%, 95%);
+}
+
+.col {
+  border: none;
+  padding: 40px;
+}
+.col1 {
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.col2 {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.col3 {
+  background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.icon {
+  margin-top: 10px;
+}
+
+.heading {
+  font-family: "Big Shoulders Display", cursive;
+}
+
+.paragraph {
+  margin-top: 20px;
+  margin-bottom: 80px;
+  font-size: 13px;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 22px;
+}
+
+button {
+  border: none;
+  background-color: hsl(0, 0%, 95%);
+  cursor: pointer;
+  height: 40px;
+  width: 120px;
+  border-radius: 50px;
+  font-weight: 700;
+}
+
+.col1 button {
+  color: hsl(31, 77%, 52%);
+}
+
+.col2 button {
+  color: hsl(184, 100%, 22%);
+}
+
+.col3 button {
+  color: hsl(179, 100%, 13%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: fixed;
+  bottom: 15px;
+  width: 100%;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 600px) {
+  .center {
+    height: 200vh;
+  }
+
+  .card {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: repeat(3, 1fr);
+    width: 300px;
+    height: 900px;
+  }
+
+  .col {
+    padding: 20px;
+  }
+
+  .col1 {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+  }
+
+  .col3 {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 0px;
+  }
+
+  .paragraph {
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+}
